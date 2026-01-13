@@ -1,0 +1,12 @@
+Name: admin
+Host: 0.0.0.0
+Mode: dev
+Port: 8888
+Log:
+  ServiceName: admin
+  Mode: file
+  Level: info
+  TimeFormat: "2006-01-02 15:04:05"
+  Path: D:\code\go\swift\runtime\logs\admin\
+  KeepDays: 7
+  Encoding: json

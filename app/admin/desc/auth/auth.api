@@ -1,0 +1,19 @@
+syntax = "v1"
+
+info (
+	title:   "认证"
+	desc:    "认证API"
+	author:  "lxjianbai"
+	email:   "@gmail.com"
+	version: "1.0"
+)
+
+type LoginReq {
+	Username string `json:"username"`
+	Password string `json:"password"`
+}
+
+type LoginResp {
+	Token string `json:"token"`
+}
+

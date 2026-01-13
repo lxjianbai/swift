@@ -1,0 +1,21 @@
+syntax = "v1"
+
+info (
+	title:   "后台管理"
+	desc:    "后台管理"
+	author:  "lxjianbai"
+	email:   "@gmail.com"
+	version: "1.0"
+)
+
+import "auth/auth.api"
+
+@server (
+	prefix: /v1
+	group:  auth
+)
+service admin {
+	@handler login
+	post /login (LoginReq) returns (LoginResp)
+}
+

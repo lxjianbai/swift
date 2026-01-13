@@ -1,0 +1,1 @@
+goctl api go --api app\admin\desc\admin.api --dir app\admin
